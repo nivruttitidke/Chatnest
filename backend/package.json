@@ -2,26 +2,23 @@
   "name": "backend",
   "version": "1.0.0",
   "main": "server.js",
+  "type": "module",
+  "license": "ISC",
   "scripts": {
     "dev": "nodemon server.js",
     "start": "node server.js"
   },
-  "keywords": [],
-  "author": "",
-  "type": "module",
-  "license": "ISC",
-  "description": "",
-  "devDependencies": {
+  "dependencies": {
     "bcryptjs": "^3.0.3",
     "cookie-parser": "^1.4.7",
     "cors": "^2.8.6",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
-    "install": "^0.13.0",
     "jsonwebtoken": "^9.0.3",
     "mongoose": "^9.1.6",
-    "nodemon": "^3.1.11",
-    "npm": "^11.9.0",
     "stream-chat": "^9.31.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.11"
   }
 }
