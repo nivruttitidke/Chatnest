@@ -126,15 +126,30 @@ function ChatPage() {
     targetUserId,
   ]);
   
-   const handleVideoCall = ()=>{
-    if(channel){
-      const callUrl = `${window.location.origin}/call/${channel._id}`;
-      channel.sendMessage({
-        text:`I've started a video call. Join me here: ${callUrl}`
-      })
-      toast.success("Video call link send successfully!")
-    }
-   };
+   const handleVideoCall = async () => {
+  try {
+    if (!channel) return;
+
+    // Generate unique call ID
+    const callId = crypto.randomUUID();
+
+    // Create call URL
+    const callUrl = `${window.location.origin}/call/${callId}`;
+
+    console.log("Call URL:", callUrl);
+
+    // Send message in chat
+    await channel.sendMessage({
+      text: `I've started a video call. Join me here: ${callUrl}`,
+    });
+
+    toast.success("Video call link sent successfully!");
+
+  } catch (error) {
+    console.error("Error starting video call:", error);
+    toast.error("Failed to start video call");
+  }
+};
   if (
     loading ||
     !chatClient ||
