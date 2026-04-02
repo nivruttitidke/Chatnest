@@ -15,11 +15,11 @@ Email: n@gmail.com
 Password: 123456
 
 You can:
-
 Send friend requests
 Start chat conversations
 Initiate video calls
 Test notifications
+
 Explore full application features
 ✨ Key Features
 🔐 Secure Authentication using JWT and HTTP-Only Cookies
@@ -29,6 +29,7 @@ Explore full application features
 🧑 User Onboarding & Profile Management
 🎨 Responsive UI with Tailwind CSS
 ☁️ Production Deployment (Frontend + Backend)
+
 🛠️ Tech Stack
 Frontend
 React.js
@@ -36,6 +37,7 @@ Vite
 Tailwind CSS
 React Query
 Axios
+
 Backend
 Node.js
 Express.js
@@ -48,6 +50,7 @@ Authentication & Security
 JWT Authentication
 HTTP-Only Cookies
 CORS Configuration
+
 Deployment
 Vercel — Frontend
 Render — Backend
