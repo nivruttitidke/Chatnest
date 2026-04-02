@@ -12,8 +12,8 @@ const port = process.env.PORT;
 app.use(cors({
     origin:[
         "http://localhost:5173",
-        "https://chatnest.vercel.app",
-        "https://chatnest-ag0g.onrender.com"
+        "https://chatnest-eta.vercel.app/",
+        
         ],
     credentials: true,
 }));
