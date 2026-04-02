@@ -12,7 +12,7 @@ const port = process.env.PORT;
 app.use(cors({
     origin:[
         "http://localhost:5173",
-        "http://chatnest.vercel.app",
+        "https://chatnest.vercel.app",
         "https://chatnest-ag0g.onrender.com"
         ],
     credentials: true,
