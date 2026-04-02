@@ -16,7 +16,7 @@ function Navbar() {
     mutationFn: logout,
     onSuccess: () => {
       toast.success(" profile logout succesfully");
-      queryClient.invalidateQueries({ queryKey: ["authUser"], Value:null });
+      queryClient.invalidateQueries({ queryKey: ["authUser"] });
        navigate("/login");
     },
    
